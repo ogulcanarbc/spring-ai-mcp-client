@@ -21,7 +21,6 @@ class McpMockAssistantChatController {
     private final ChatClient chatClient;
 
     public McpMockAssistantChatController(ChatClient.Builder chatClientBuilder, ToolCallbackProvider tools) {
-        log.info(tools.getToolCallbacks()[0].getName());
         this.chatClient = chatClientBuilder
             .defaultTools(tools.getToolCallbacks())
             .defaultAdvisors(new PromptChatMemoryAdvisor(new InMemoryChatMemory()))
