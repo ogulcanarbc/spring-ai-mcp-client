@@ -9,7 +9,7 @@ spring:
         request-timeout: 20s
         stdio:
           root-change-notification: true
-          servers-configuration: classpath:mcp-servers.json # MCP server config such/same as cloud desktop configs.
+          servers-configuration: classpath:mcp-servers.json # MCP server config such/same as claude desktop configs.
     anthropic:
       api-key: ${ANTHROPIC_API_KEY}
 server:
