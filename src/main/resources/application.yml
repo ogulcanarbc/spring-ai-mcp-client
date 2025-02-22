@@ -3,7 +3,7 @@ spring:
     mcp:
       client:
         enabled: true
-        name: mock-delivery-support-assistant # MCP server name
+        name: any-mcp-server # MCP server name
         version: 1.0.0
         type: SYNC
         request-timeout: 20s

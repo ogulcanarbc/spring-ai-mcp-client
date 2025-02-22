@@ -1,9 +1,9 @@
 {
   "mcpServers":{
-    "mock-mcp-server":{
+    "any-mcp-server":{
       "command":"node",
       "args":[
-        "mcp-server/build/index.js"
+        "any-mcp-server/build/index.js"
       ]
     }
   }
