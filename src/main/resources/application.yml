@@ -1,0 +1,16 @@
+spring:
+  ai:
+    mcp:
+      client:
+        enabled: true
+        name: mock-delivery-support-assistant # MCP server name
+        version: 1.0.0
+        type: SYNC
+        request-timeout: 20s
+        stdio:
+          root-change-notification: true
+          servers-configuration: classpath:mcp-servers.json # MCP server config such/same as cloud desktop configs.
+    anthropic:
+      api-key: ${ANTHROPIC_API_KEY}
+server:
+  port: 8081

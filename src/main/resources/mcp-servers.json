@@ -1,0 +1,10 @@
+{
+  "mcpServers":{
+    "mock-delivery-support-assistant":{
+      "command":"node",
+      "args":[
+        "/Users/ogulcan.arabaci/GolangProjects/open-source/mock-support-assistant-mcp-server/build/index.js"
+      ]
+    }
+  }
+}
