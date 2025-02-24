@@ -15,12 +15,12 @@ import java.util.Map;
 import java.util.Objects;
 
 @RestController
-class McpMockAssistantChatController {
+class McpAssistantChatController {
 
-    private static final Logger log = LoggerFactory.getLogger(McpMockAssistantChatController.class);
+    private static final Logger log = LoggerFactory.getLogger(McpAssistantChatController.class);
     private final ChatClient chatClient;
 
-    public McpMockAssistantChatController(ChatClient.Builder chatClientBuilder, ToolCallbackProvider tools) {
+    public McpAssistantChatController(ChatClient.Builder chatClientBuilder, ToolCallbackProvider tools) {
         this.chatClient = chatClientBuilder
             .defaultTools(tools.getToolCallbacks())
             .defaultAdvisors(new PromptChatMemoryAdvisor(new InMemoryChatMemory()))
