@@ -84,5 +84,5 @@ Once the application is running, it can be accessed via the following endpoint:
 
 You can start a chat with the following cURL command:
 
-```curl -X POST "http://localhost:8091/ai" -H "Content-Type: application/json" -d '{"message": "Hello, how can I help you?"}' ```
+```curl -X GET "http://localhost:8081/ai?message=Hello" -H "Accept: application/json"```
 
