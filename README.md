@@ -1,4 +1,4 @@
-# spring-api-mcp-client
+# spring-ai-mcp-client
 
 The Model Context Protocol (MCP) client application utilizes Spring AI and Anthropic Claude models (Or OpenAI). It integrates with MCP protocol-supported servers to enable AI-powered chat interactions.
 
