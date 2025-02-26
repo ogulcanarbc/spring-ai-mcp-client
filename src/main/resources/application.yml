@@ -12,5 +12,7 @@ spring:
           servers-configuration: classpath:mcp-servers.json # MCP server config such/same as claude desktop configs.
     anthropic:
       api-key: ${ANTHROPIC_API_KEY}
+#    openai:
+#      api-key:  ${OPENAI_API_KEY}
 server:
   port: 8081

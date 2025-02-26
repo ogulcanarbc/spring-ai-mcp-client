@@ -1,7 +1,5 @@
 package mcp.client.controller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.PromptChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.InMemoryChatMemory;
@@ -17,7 +15,6 @@ import java.util.Objects;
 @RestController
 class McpAssistantChatController {
 
-    private static final Logger log = LoggerFactory.getLogger(McpAssistantChatController.class);
     private final ChatClient chatClient;
 
     public McpAssistantChatController(ChatClient.Builder chatClientBuilder, ToolCallbackProvider tools) {
@@ -27,7 +24,7 @@ class McpAssistantChatController {
             .build();
     }
 
-    @GetMapping("/ai/simple")
+    @GetMapping("/ai")
     public ResponseEntity<Map<String, String>> completion(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
         return ResponseEntity.ok(Map.of("completion", Objects.requireNonNull(chatClient.prompt()
             .user(message).call().content())));
