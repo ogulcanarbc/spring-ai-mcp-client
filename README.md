@@ -18,7 +18,7 @@ It implements the client-side of the protocol, handling:
 ## Requirements
     Java 17+
     Maven or Gradle
-    Docker (Opsiyonel)
+    Docker (Optional)
     Anthropic API key Or OpenAI API key
 
 - Anthropic API key from the [Anthropic Console](https://console.anthropic.com).
