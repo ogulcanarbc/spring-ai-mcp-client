@@ -32,7 +32,7 @@ It implements the client-side of the protocol, handling:
 
 ### 2. MCP Server Configuration
 
-    The MCP server information must be added to the mcp-servers.json file as follows.
+The MCP server information must be added to the mcp-servers.json file as follows.
 
 ```json mcpservers.json
 {
@@ -49,7 +49,7 @@ It implements the client-side of the protocol, handling:
 
 ### 3. Spring Configuration
 
-    The application.yml file should be configured as follows:
+The application.yml file should be configured as follows:
 
 ```yaml
 spring:
